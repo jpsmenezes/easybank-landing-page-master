@@ -1,0 +1,29 @@
+:root{
+
+    /*Primary color*/
+    --Dark-blue: hsl(233, 26%, 24%);
+    --Lime-green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /*Neutral color*/
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+}
