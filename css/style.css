@@ -11,8 +11,11 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 
+    --navigationHeight: 5.6rem;
+
     font-size: 62.5%; /* 1rem = 10px */
 }
+/*===== GERAL ==============================================*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -37,9 +40,9 @@ h3{
     color: var(--Dark-blue);
 }
 h1{
-    font-size: 4.5rem;    
+    font-size: 4rem;    
 
-    width: min(40rem, 100%);
+    width: 100%;
     margin-inline: auto;
 }
 h2{
@@ -71,7 +74,74 @@ span{
     font-size: 1.4rem;
 }
 .wrapper{
-    width: min(50rem, 100%);	
+    width: min(60rem, 100%);	
 	margin-inline: auto;
 	padding-inline: 3rem;
+}
+
+/*===== NAVIGATION =========================================*/
+#navigation{    
+    display: flex;    
+
+    width: 100%;
+    height: var(--navigationHeight);
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: var(--White);
+}
+#navigation .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+#navigation .wrapper .menu{
+    position: fixed;
+    opacity: 0;
+	visibility: hidden;
+}
+#navigation .close-menu{
+    display:none;
+}
+#navigation button{
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+/*===== HOME ===============================================*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+#home .backgroundImage{
+    width: min(60rem, 100%);
+
+    margin-inline: auto; 
+
+    position: relative;        
+}
+#home img:first-child{
+    width: 100%; 
+    margin-top: 1rem;  
+}
+#home img:last-child{
+    position: absolute;    
+    top: -8rem;
+    left: 0;
+
+    width: 100%;
+}
+#home .wrapper{
+    transform: translateY(-3rem);
+}
+
+
+
+#latestArticles img{
+    width: 100%;
 }
