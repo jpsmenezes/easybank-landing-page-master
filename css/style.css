@@ -26,6 +26,8 @@ body{
 body{
     font-family: 'Public Sans', sans-serif;
     font-size: 1.8rem;
+
+    background-color: var(--Very-Light-Gray);
 }
 h1,
 h2,
@@ -63,6 +65,10 @@ a{
 }
 ul{
     list-style: none;
+}
+span{
+    color: var(--Grayish-Blue);
+    font-size: 1.4rem;
 }
 .wrapper{
     width: min(50rem, 100%);	
