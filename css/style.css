@@ -43,7 +43,8 @@ h1{
     font-size: 4rem;    
 
     width: 100%;
-    margin-inline: auto;
+
+    margin-inline: auto;    
 }
 h2{
     font-size: 3.5rem;
@@ -60,8 +61,11 @@ h4{
     color: var(--Dark-blue);    
 }
 p{
-    color: var(--Grayish-Blue);
+    color: var(--Grayish-Blue);    
+
     line-height: 150%;
+    font-size: 1.4rem;
+    text-align: center;     
 }
 a{
     text-decoration: none;
@@ -77,6 +81,9 @@ span{
     width: min(60rem, 100%);	
 	margin-inline: auto;
 	padding-inline: 3rem;
+}
+.button{
+
 }
 
 /*===== NAVIGATION =========================================*/
@@ -112,11 +119,14 @@ span{
     cursor: pointer;
 }
 
+
 /*===== HOME ===============================================*/
 #home{
     display: flex;
     flex-direction: column;
     justify-content: center;  
+
+    padding-bottom: 4rem;
 }
 #home .backgroundImage{
     width: min(60rem, 100%);
@@ -138,7 +148,49 @@ span{
 }
 #home .wrapper{
     transform: translateY(-3rem);
+    
 }
+#home .wrapper .col-a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .button{
+    font-size: 1.4rem;
+
+    padding: 1rem 3rem;   
+   
+    border-radius: 2rem;
+
+    color: var(--White);
+    background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
+}
+#home p{
+    padding-block: 3rem;
+}
+
+/*===== WHY CHOOSE EASY BANK ================================*/
+#whyChooseEasybank{
+    background-color: var(--Light-Grayish-Blue);
+
+    padding-block: 6rem;
+}
+#whyChooseEasybank header p{
+    padding: 2rem 0 4rem;
+}
+#whyChooseEasybank section ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#whyChooseEasybank section p{
+    padding-block: 2rem;
+}
+#whyChooseEasybank ul li img{
+    padding-block: 2rem;
+}
+
 
 
 
