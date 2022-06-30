@@ -94,6 +94,9 @@ span{
     color: var(--White);
     background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
 }
+.button:hover{
+  
+}
 
 /*===== NAVIGATION =========================================*/
 #navigation{    
