@@ -56,8 +56,8 @@ h3{
     font-size: 2.5rem;      
 }
 h4{
-    font-size: 2rem;
-    font-weight: 400;    
+    font-size: 1.6rem;
+    font-weight: 600;    
     color: var(--Dark-blue);    
 }
 p{
@@ -83,7 +83,12 @@ span{
 	padding-inline: 3rem;
 }
 .button{
+    font-size: 1.4rem;   
+   
+    border-radius: 2rem;
 
+    color: var(--White);
+    background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
 }
 
 /*===== NAVIGATION =========================================*/
@@ -156,14 +161,7 @@ span{
     align-items: center;
 }
 #home .button{
-    font-size: 1.4rem;
-
-    padding: 1rem 3rem;   
-   
-    border-radius: 2rem;
-
-    color: var(--White);
-    background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
+    padding: 1rem 3rem;  
 }
 #home p{
     padding-block: 3rem;
@@ -195,15 +193,37 @@ span{
     padding-block: 6rem;
 }
 #latestArticles .wrapper h2{
-    padding-block: 3rem;
+    padding: 3rem 0 0;
+}
+#latestArticles ul li{
+    display: flex;
+    flex-direction: column;
 }
 #latestArticles img{
     width: 100%;
 
     border-radius: .5rem .5rem 0 0;
 
-    padding-bottom: 2rem;
+    padding: 5rem 0 2rem;
 }
 #latestArticles ul li span{
     font-size: 1.2rem;
+}
+#latestArticles ul li span,
+#latestArticles ul li h4,
+#latestArticles ul li p{
+    width: 90%;
+
+    margin-inline: auto;
+    padding-bottom: 1rem;
+
+    text-align: left;
+}
+#latestArticles ul li p{
+    font-size: 1.3rem;
+}
+
+/*===== FOOTER =====================================*/
+footer{
+    background-color: var(--Dark-blue);
 }
