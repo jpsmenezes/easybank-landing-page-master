@@ -272,7 +272,7 @@ footer .footer-links div:last-child{
     align-items: center;   
 }
 footer .footer-links div:last-child .button{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 footer .footer-links div:last-child small{
     color: var(--Grayish-Blue);
