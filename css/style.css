@@ -176,17 +176,6 @@ body.menu-expended #navigation .menu > a{
 body.menu-expended #home img:last-child{
     display: none;
 }
-body.menu-expended #home .backgroundImage::after{
-    content: '';
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: var(--navigationHeight);
-    left: 0;
-    background: linear-gradient(hsla(233, 26%, 24%, 0.908), hsla(233, 26%, 24%, 0.589), rgba(255, 255, 255, 0.098));
-    
-
-}
 
 
 /*===== HOME ===============================================*/
