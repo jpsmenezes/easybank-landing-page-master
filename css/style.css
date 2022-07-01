@@ -95,7 +95,7 @@ span{
     background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
 }
 .button:hover{
-  
+    box-shadow: inset 0rem 0rem 0rem 5rem rgba(255, 255, 255, 0.3);
 }
 
 /*===== NAVIGATION =========================================*/
@@ -113,7 +113,9 @@ span{
 #navigation .wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;  
+    
+    position: relative;
 }
 #navigation .wrapper .menu{
     position: fixed;
@@ -129,6 +131,50 @@ span{
     background-color: transparent;
 
     cursor: pointer;
+}
+
+/*===== MENU-EXPENDED ======================================*/
+body.menu-expended{
+    overflow: hidden;
+}
+body.menu-expended #navigation .open-menu{
+    display: none;
+}
+body.menu-expended #navigation .close-menu{
+    display: flex;
+}
+body.menu-expended #navigation .wrapper .menu{
+    opacity: 1;
+	visibility: visible;
+
+    position: absolute;
+    top: calc(var(--navigationHeight) + 2.5rem);
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    background-color: var(--White);
+   
+    border-radius: .5rem;
+}
+body.menu-expended #navigation .menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    
+    padding-block: 3.5rem;
+}
+body.menu-expended #navigation .menu ul li a {
+    color: var(--Dark-blue);
+}
+body.menu-expended #navigation .menu > a{
+    display: none;
+}
+body.menu-expended #home img:last-child{
+    display: none;
 }
 
 
