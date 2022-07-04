@@ -333,7 +333,10 @@ footer .footer-links div:last-child small{
 
     /*===== GERAL =====================================*/
     body{
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+       
+
     }
     .wrapper{        
         width: min(112rem, 100%);
@@ -345,6 +348,9 @@ footer .footer-links div:last-child small{
 	.col-b{
 		grid-area: B;
 	}
+    body h1{       
+        text-align: left;
+    }
 
     /*===== NAVIGATION =====================================*/
      nav#navigation{
@@ -403,6 +409,12 @@ footer .footer-links div:last-child small{
     }
 
     /*===== HOME ===========================================*/
+    #home{
+        padding-bottom: 0;
+        background: url(../images/bg-intro-desktop.svg) no-repeat;
+        background-size: 100%;
+        background-position: 63rem;
+    }
     #home .backgroundImage{
         display: none;
     }
@@ -414,11 +426,27 @@ footer .footer-links div:last-child small{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         'A B';
+
+        height: 65.5rem;
     }
     #home .wrapper .col-a{
-       
+       margin-block: auto;
+       margin-block: auto;
+        margin-inline: auto;
+        width: 40rem;
+        align-items: flex-start;
+    }
+    #home .wrapper .col-a p{
+        width: 30rem;
+        text-align: left;
     }
     #home .wrapper .col-b{
         display: block;
+        position: relative;       
+    }    
+    #home img:last-child{
+        left: 11rem;
+        width: 70rem;
     }
+
 }
