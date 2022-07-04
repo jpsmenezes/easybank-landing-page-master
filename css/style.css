@@ -11,7 +11,8 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 
-    --navigationHeight: 5.6rem;
+    --navigationHeightMobile: 5.6rem;
+    ----navigationHeightDesktop: 8rem;
 
     font-size: 62.5%; /* 1rem = 10px */
 }
@@ -103,7 +104,7 @@ span{
     display: flex;    
 
     width: 100%;
-    height: var(--navigationHeight);
+    height: var(--navigationHeightMobile);
 
     position: fixed;
     top: 0;
@@ -322,4 +323,81 @@ footer .footer-links div:last-child small{
     color: var(--Grayish-Blue);
 
     margin-bottom: 3rem;
+}
+
+/*===== @MEDIA =====================================*/
+@media (min-width: 1024px){
+
+    /*===== GERAL =====================================*/
+    body{
+        overflow: auto;
+    }
+    .wrapper{        
+        width: min(112rem, 100%);
+        display: grid;        
+    }
+    .col-a{
+		grid-area: A;		
+	}
+	.col-b{
+		grid-area: B;
+	}
+
+     /*===== NAVIGATION =====================================*/
+     nav#navigation{
+        height: var(----navigationHeightDesktop);
+     }
+    nav#navigation .wrapper .menu{        
+        opacity: 1;
+        visibility: visible;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 2;
+    }
+    nav#navigation :is(.open-menu, .close-menu){
+        display: none;
+    }
+    nav#navigation .wrapper > a{
+        flex: 1;
+    }
+    nav#navigation .menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }    
+    nav#navigation .menu ul li a{
+        font-size: 1.4rem;
+        color: var(--Grayish-Blue);
+        padding-bottom: 1rem;
+    }
+    nav#navigation .menu ul li a:hover{
+        color: var(--Dark-blue);
+        font-weight: 700;
+    }
+    nav#navigation .menu ul li a::after{
+        content: '';
+       
+        width: 0%;
+        height: .3rem;
+       
+        display: block;
+
+        position: relative;
+        bottom: -28px; 
+        left: -3px;
+       
+        background: linear-gradient(to right, var(--Lime-green),var(--Bright-Cyan));
+
+        transition: 200ms;
+    }
+    nav#navigation .menu ul li a:hover:after{
+        width: 130%;
+    }
+
+   
 }
