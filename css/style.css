@@ -34,9 +34,7 @@ body{
 
     overflow: overlay;
 }
-h1,
-h2,
-h3{
+body :is(h1,h2,h3){
     font-weight: 400;
     text-align: center;
     color: var(--Dark-blue);
@@ -243,11 +241,8 @@ body.menu-expended #home img:last-child{
     flex-direction: column;
     align-items: center;
 }
-#whyChooseEasybank section p{
-    padding-block: 2rem;
-}
-#whyChooseEasybank ul li img{
-    padding-block: 2rem;
+#whyChooseEasybank section :is(p, img){
+     padding-block: 2rem;
 }
 
 /*===== LATEST ARTICLES =====================================*/
@@ -271,9 +266,7 @@ body.menu-expended #home img:last-child{
 #latestArticles ul li span{
     font-size: 1.2rem;
 }
-#latestArticles ul li span,
-#latestArticles ul li h4,
-#latestArticles ul li p{
+#latestArticles ul :is(span, h4, p){
     width: 90%;
 
     margin-inline: auto;
@@ -306,12 +299,7 @@ footer .social-links ul{
 footer .logo path[fill*="#2D314D"]{
     fill: var(--White);
 }
-footer .footer-links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-footer .footer-links ul{
+footer .footer-links :is(ul, div:last-child){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,11 +314,6 @@ footer .footer-links div:first-child{
 }
 footer .footer-links div:first-child ul li{
     margin-block: .8rem;
-}
-footer .footer-links div:last-child{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
 }
 footer .footer-links div:last-child .button{
     margin-bottom: 3rem;
