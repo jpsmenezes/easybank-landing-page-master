@@ -410,10 +410,7 @@ footer .footer-links div:last-child small{
 
     /*===== HOME ===========================================*/
     #home{
-        padding-bottom: 0;
-        background: url(../images/bg-intro-desktop.svg) no-repeat;
-        background-size: 100%;
-        background-position: 63rem;
+        padding-bottom: 0;        
     }
     #home .backgroundImage{
         display: none;
