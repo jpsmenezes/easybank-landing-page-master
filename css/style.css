@@ -440,7 +440,10 @@ footer .footer-links div:last-child small{
     #home .wrapper .col-b{
         display: block;
         position: relative;       
-    }    
+    }  
+    #home img:first-child{
+        width: 100rem;
+    }      
     #home img:last-child{
         left: 11rem;
         width: 70rem;
