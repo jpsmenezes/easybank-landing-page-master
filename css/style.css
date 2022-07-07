@@ -351,7 +351,9 @@ footer .footer-links div:last-child small{
     body h1{       
         text-align: left;
     }
-
+    h1{
+        font-size: 5rem;
+    }
     /*===== NAVIGATION =====================================*/
      nav#navigation{
         height: var(----navigationHeightDesktop);
@@ -442,11 +444,20 @@ footer .footer-links div:last-child small{
         position: relative;       
     }  
     #home img:first-child{
-        width: 100rem;
+        width: 117rem;
+
+        position: absolute;
+        top: -23rem;        
+
+        margin-top: 0;
     }      
     #home img:last-child{
-        left: 11rem;
+        left: 15rem;
+        top: -11rem;
+
         width: 70rem;
+
+        
     }
 
 }
