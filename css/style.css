@@ -442,7 +442,7 @@ footer .footer-links div:last-child small{
     }
     #home .wrapper .col-b{
         display: block;
-        
+
         position: relative;       
     }  
     #home img:first-child{
@@ -481,4 +481,18 @@ footer .footer-links div:last-child small{
         width: 23rem;
         text-align: initial;
     }
+
+     /*===== LATES ARTICLES ===========================================*/
+     #latestArticles section ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+     }
+     #latestArticles section ul li{
+       
+     }
+     #latestArticles section ul li img{       
+        height: 20rem;
+        
+     }
 }
