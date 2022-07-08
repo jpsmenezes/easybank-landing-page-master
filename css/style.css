@@ -429,18 +429,20 @@ footer .footer-links div:last-child small{
         height: 65.5rem;
     }
     #home .wrapper .col-a{
-       margin-block: auto;
-       margin-block: auto;
-        margin-inline: auto;
+        margin-block: auto;      
+       
         width: 40rem;
+
         align-items: flex-start;
     }
     #home .wrapper .col-a p{
-        width: 30rem;
+        width: 39rem;
+
         text-align: left;
     }
     #home .wrapper .col-b{
         display: block;
+        
         position: relative;       
     }  
     #home img:first-child{
@@ -455,9 +457,28 @@ footer .footer-links div:last-child small{
         left: 15rem;
         top: -11rem;
 
-        width: 70rem;
-
-        
+        width: 70rem;       
     }
 
+    /*=====  WHY CHOOSE EASY BANK ===========================================*/
+    #whyChooseEasybank h2{
+        text-align: initial;
+        margin: 0;
+        width: 100%;
+    }
+    #whyChooseEasybank header p{
+    text-align: initial;
+    width: 52rem;
+    }
+    #whyChooseEasybank section ul{
+        display: flex;    
+        justify-content: space-between;    
+    }
+    #whyChooseEasybank section ul li{
+        align-items: flex-start;
+    }
+    #whyChooseEasybank section p{
+        width: 23rem;
+        text-align: initial;
+    }
 }
