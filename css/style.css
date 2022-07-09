@@ -420,8 +420,7 @@ footer .footer-links div:last-child small{
 
     /*===== HOME ===========================================*/
     #home{
-        padding-bottom: 0;  
-        overflow: hidden;      
+        padding-bottom: 0;            
     }
     #home .backgroundImage{
         display: none;
