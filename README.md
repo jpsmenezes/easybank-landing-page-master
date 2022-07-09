@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-html-css-and-javascript-sWNBQ9aRrS)
 - Live Site URL: [live site URL](https://jpsmenezes.github.io/easybank-landing-page-master/#)
 
 ## My process
