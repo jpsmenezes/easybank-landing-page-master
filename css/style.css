@@ -354,6 +354,14 @@ footer .footer-links div:last-child small{
     h1{
         font-size: 5rem;
     }
+    h4{
+        font-weight: 400;
+
+        cursor: pointer;
+    }
+    h4:hover{
+        color: var(--Bright-Cyan);
+    }
     /*===== NAVIGATION =====================================*/
      nav#navigation{
         height: var(----navigationHeightDesktop);
@@ -388,7 +396,7 @@ footer .footer-links div:last-child small{
     }
     nav#navigation .menu ul li a:hover{
         color: var(--Dark-blue);
-        font-weight: 700;
+        text-shadow: 0 0 .1rem black;
     }
     nav#navigation .menu ul li a::after{
         content: '';
@@ -481,18 +489,22 @@ footer .footer-links div:last-child small{
         width: 23rem;
         text-align: initial;
     }
+    #whyChooseEasybank section :is(p, img) {
+        padding-block: 3rem;
+    }
 
      /*===== LATES ARTICLES ===========================================*/
      #latestArticles section ul{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        gap: 3rem;
      }
      #latestArticles section ul li{
        
      }
      #latestArticles section ul li img{       
         height: 20rem;
-        
+        margin: 5rem 0 3rem;
      }
 }
