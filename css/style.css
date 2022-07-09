@@ -507,4 +507,43 @@ footer .footer-links div:last-child small{
         height: 20rem;
         margin: 5rem 0 3rem;
      }
+
+     /*===== FOOTER ====================================================*/
+     footer .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12rem;
+     }
+     footer .social-links{
+        width: auto;
+     }
+     footer .social-links .logo{
+        padding: 0 0 5rem;
+     }
+     footer .social-links ul svg path:hover {
+        fill: var(--Lime-green);
+     }
+     footer .footer-links{
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+     }
+     footer .footer-links div{
+        display: flex;
+     }
+     footer .footer-links div:first-child{
+        gap: 12rem;       
+     }
+     footer .footer-links div:first-child ul{
+        align-items: flex-start;
+     }
+     footer .footer-links div:last-child{
+        align-items: flex-end;
+     }
+     footer .footer-links ul a:hover{
+        color: var(--Lime-green);
+     }
 }
